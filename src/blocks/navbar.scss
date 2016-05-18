@@ -7,6 +7,16 @@
   &__left {
     float: left;
     width: 50%;
+    padding: 20px 0;
+  }
+
+  &__logo {
+    margin-right: 30px;
+  }
+
+  &__tagline {
+    padding-left: 20px;
+    border-left: 1px solid #4c76ff;
   }
 
   &__right {

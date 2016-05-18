@@ -61,8 +61,7 @@ gulp.task('js', function () {
 //Слежка
 gulp.task('watch', function () {
   gulp.watch(['./src/*.html'], ['html']);
-  gulp.watch(['./src/sass/**/*.scss'], ['sass']);
-  gulp.watch(['./src/blocks/**/*.scss'], ['sass']);
+  gulp.watch(['./src/**/*.scss'], ['sass']);
   gulp.watch(['./src/css/*.css'], ['css']);
   gulp.watch(['./src/js/*.js'], ['js']);
 });

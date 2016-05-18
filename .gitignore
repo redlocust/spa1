@@ -2,3 +2,4 @@ node_modules
 src/bower
 dist
 .idea
+_design
