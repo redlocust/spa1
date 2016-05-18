@@ -25,12 +25,11 @@ gulp.task('img', function () {
 // SCSS into CSS
 
 gulp.task('sass', function () {
-  return gulp.src('./src/sass/**/*.scss')
+  return gulp.src('./src/sass/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./src/css'));
 });
 
-//Работа с html
 gulp.task('html', function () {
 
   gulp.src('./src/**/*.html')
@@ -63,6 +62,7 @@ gulp.task('js', function () {
 gulp.task('watch', function () {
   gulp.watch(['./src/*.html'], ['html']);
   gulp.watch(['./src/sass/**/*.scss'], ['sass']);
+  gulp.watch(['./src/blocks/**/*.scss'], ['sass']);
   gulp.watch(['./src/css/*.css'], ['css']);
   gulp.watch(['./src/js/*.js'], ['js']);
 });

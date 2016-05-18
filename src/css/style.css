@@ -364,16 +364,14 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+* {
+  box-sizing: border-box; }
+
 body {
   background-color: #fff;
   color: #000;
   min-width: 994px;
   font-family: "Lato", "Arial", sans-serif; }
-
-.container {
-  width: 974px;
-  margin: 0 auto;
-  padding: 0 10px; }
 
 .clearfix::before, .clearfix::after {
   display: table;
@@ -382,45 +380,29 @@ body {
 .clearfix::after {
   clear: both; }
 
-.main-header {
+.page-header {
   background: #2f2b28 url("../img/bg-header.jpg") top center no-repeat;
   background-size: cover;
   color: #fff;
   min-height: 700px; }
 
-.logo {
-  float: left;
-  padding-top: 20px;
-  width: 145px; }
-  .logo a {
-    font-size: 28px;
-    font-family: "Lato", "Arial", sans-serif;
-    color: #fff;
-    line-height: 1.2;
-    text-decoration: none;
-    font-weight: 700; }
-    .logo a span {
-      color: #4c76ff; }
+.navbar__inner {
+  width: 974px;
+  margin: 0 auto;
+  padding: 0 10px; }
 
-.tag-line {
+.navbar__left {
   float: left;
-  width: 425px;
-  padding-top: 30px; }
+  width: 50%; }
 
-.main-navigation {
-  width: 400px;
-  text-align: right;
-  list-style: none;
-  margin: 0;
-  font-size: 0;
+.navbar__right {
   float: right;
-  padding: 30px 0 0; }
-  .main-navigation li {
-    display: inline-block;
-    vertical-align: top; }
-  .main-navigation a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    line-height: 1.2;
-    font-family: "Lato", "Arial", sans-serif; }
+  width: 50%; }
+
+.logo {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Lato", Arial, sans-serif;
+  color: #fff;
+  line-height: 1.2;
+  text-align: left; }

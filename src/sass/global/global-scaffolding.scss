@@ -1,0 +1,22 @@
+// Normally mainpage styles
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  color: #000;
+  min-width: 994px;
+  font-family: "Lato", "Arial", sans-serif;
+}
+
+
+.clearfix::before, .clearfix::after {
+  display: table;
+  content: "";
+}
+
+.clearfix::after {
+  clear: both;
+}
