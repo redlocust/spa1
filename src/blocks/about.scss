@@ -1,0 +1,53 @@
+//page-header
+.about {
+  text-align: center;
+  &__inner {
+    @include container;
+  }
+
+  &__logo {
+    margin-bottom: 0;
+  }
+
+  &__slogan {
+    font: 100 48px/1.2 #{$primary-font-family};
+    color: #fff;
+    margin-bottom: 25px;
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__ext-slogan {
+    font: 100 18px/1.2 #{$primary-font-family};
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 100px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 1px;
+      background: $primary-color;
+      left: -70px;
+      top: 11px;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 1px;
+      background: $primary-color;
+      right: -70px;
+      top: 11px;
+    }
+  }
+
+  &__social {
+    @include container;
+  }
+}
