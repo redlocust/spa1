@@ -406,6 +406,7 @@ body {
     display: inline-block;
     vertical-align: top; }
   .navbar__right {
+    margin-top: -20px;
     float: right;
     width: 50%; }
 
@@ -445,6 +446,7 @@ body {
 .main-nav__link {
   display: inline-block;
   vertical-align: top;
+  padding-top: 20px;
   font: 100 12px/1.2 Lato, Arial, sans-serif;
   color: #fff;
   text-decoration: none;
@@ -541,3 +543,76 @@ body {
   width: 20px;
   height: 16px;
   background-position: -73px -59px; }
+
+.features {
+  padding-top: 75px;
+  background-color: #efefef;
+  min-height: 435px; }
+  .features__inner {
+    width: 994px;
+    margin: 0 auto;
+    padding: 0 10px; }
+  .features__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    text-align: left;
+    padding-left: 50px;
+    position: relative; }
+    .features__item:nth-child(3n + 2) {
+      margin: 0 33px; }
+  .features__item-title {
+    font: 600 17/1.2 "Open Sans", "Arial", sans-serif;
+    color: #062033;
+    margin: 18px 0; }
+  .features__item-text {
+    color: #062033;
+    font: 400 11px/18px "Open Sans", "Arial", sans-serif; }
+  .features__icon {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: solid 1px #4c76ff;
+    top: 17px;
+    left: 0; }
+
+.section-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 90px;
+  color: #4c76ff;
+  text-transform: uppercase;
+  text-align: center;
+  font: 700 28px/1.2 "Lato", "Arial", sans-serif;
+  position: relative; }
+  .section-title::after {
+    position: absolute;
+    content: "";
+    width: 229px;
+    height: 14px;
+    background: transparent url("../img/pic-heart-shape.png") top center no-repeat;
+    background-size: cover;
+    bottom: -30px;
+    left: calc(50% - 229px/2); }
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?80975146");
+  src: url("../font/fontello.eot?80975146#iefix") format("embedded-opentype"), url("../font/fontello.woff2?80975146") format("woff2"), url("../font/fontello.woff?80975146") format("woff"), url("../font/fontello.ttf?80975146") format("truetype"), url("../font/fontello.svg?80975146#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon {
+  font-family: fontello;
+  position: absolute;
+  color: #4c76ff;
+  top: 25%;
+  left: 25%; }
+  .icon--pencil:before {
+    content: '\e800'; }
+  .icon--feather:before {
+    content: '\e801'; }
+  .icon--megaphone:before {
+    content: '\e802'; }

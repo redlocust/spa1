@@ -1,0 +1,20 @@
+.section-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 90px;
+  color: $primary-color;
+  text-transform: uppercase;text-align: center;
+  font: 700 28px/1.2 $primary-font-family;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 229px;
+    height: 14px;
+    background: transparent url("../img/pic-heart-shape.png") top center no-repeat;
+    background-size: cover;
+    bottom: -30px;
+    left: calc(50% - 229px/2);
+  }
+}
